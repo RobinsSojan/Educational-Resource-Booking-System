@@ -1,0 +1,100 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  --color-bg: #282c34;
+  --color-bg-variant: #3b404a;
+  --color-primary: #61dafb;
+  --color-primary-variant: rgba(97, 218, 251, 0.5);
+  --color-light: rgba(255, 255, 255, 0.7);
+}
+
+/* FORM */
+.register {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-bg);
+  color: var(--color-light);
+}
+
+.registerTitle {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: var(--color-bg-variant);
+  border-radius: 8px;
+}
+
+.registerForm>label {
+  margin: 10px 0;
+  color: var(--color-light);
+}
+
+.registerInput {
+  padding: 12px;
+  background-color: #4f5b66;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.registerInput:focus {
+  outline: none;
+  border: 2px solid var(--color-primary);
+}
+
+.registerButton {
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.registerButton:hover {
+  background-color: var(--color-primary-variant);
+}
+
+@media screen and (max-width: 480px) {
+  .registerTitle {
+    font-size: 36px;
+  }
+
+  .registerInput {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .registerButton {
+    font-size: 14px;
+    padding: 14px;
+  }
+}
